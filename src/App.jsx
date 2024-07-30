@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Inicio from './components/view/Inicio'
+import Menu from './components/common/Menu';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-       <h1>magic films</h1>
+      <div className='App'>
+        <Menu></Menu>
+       <Inicio></Inicio>
       </div>
     </>
   )

@@ -1,0 +1,26 @@
+.containerImg-presentacion{
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.containerImg-presentacion img{
+    height: 150%;
+    width: 100%;
+}
+
+.text-descripcion{
+    font-size: 23px;
+}
+
+@media screen and (max-width:599px) {
+
+    .containerImg-presentacion{
+        height: 400px;
+    }
+    .text-descripcion{
+        font-size: 18px;
+    }
+    
+}
