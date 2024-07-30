@@ -1,0 +1,50 @@
+.menu{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 25px;
+    font-weight: bold;
+    animation: header-scroll linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+    transition: 5s ease;
+   
+}
+
+@keyframes header-scroll {
+    to{
+        background-color: #191919;
+    }
+}
+
+
+.containerLogo-nav{
+    height: 60px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogo-nav img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:599px) {
+    .containerLogo-nav{
+        height: 50px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .containerLogo-nav img{
+        height: 100%;
+        width: 100%;
+    }
+}

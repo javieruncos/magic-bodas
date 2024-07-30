@@ -1,5 +1,75 @@
 .portada-secundaria{
     height: 500px;
     width: 100%;
-    background-color: aqua;
+    background-image: url("../../assets/img/boda.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.capa-portada-secundaria{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.contacto{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.text-contacto{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    color: white;
+}
+
+.img-contacto{
+    height: 100%;
+    width: 50%;
+}
+
+.img-contacto img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-contacto{
+    padding: 20px 50px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+   
+}
+
+@media screen and (max-width: 599px) {
+    .contacto{
+        height: 400px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-contacto{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-contacto{
+        width: 100%;
+        margin-top: 50px;
+    }
 }

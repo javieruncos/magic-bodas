@@ -1,11 +1,82 @@
 .containerImg-bodas{
     height: 400px;
     width: 100%;
-    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.containerImg-bodas img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerImg-bodas:hover img{
+   height: 110%;
+    transition: all 1s;
+}
+
+.capaimg-bodas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
 }
 
 .item-descripcion{
     height: 400px;
     width: 100%;
-    background-color: blue;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+.item-descripcion img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1.8;
+    filter: grayscale(100%);
+}
+
+.capa-item-descripcion{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 0;
+
+}
+
+.capa-item-descripcion ul{
+    padding: 20px 60px;
+    font-size: 27px;
+    color: #38b6a7;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 599px) {
+
+    .item-descripcion{
+        height: 400px;
+    }
+
+
+    .capa-item-descripcion ul {
+        padding: 20px 33px;
+        font-size: 20px;
+        color: #38b6a7;
+        font-weight: bold;
+    }
 }
