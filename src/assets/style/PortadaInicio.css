@@ -1,7 +1,7 @@
 .portadaInicio {
     height: 600px;
     width: 100%;
-    background-image: url("../../assets/img/boda.jpg");
+    background-image: url("../img/boda.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
